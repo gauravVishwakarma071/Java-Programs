@@ -1,5 +1,7 @@
+/*
+ * Taking input and giving output in an array.
+ */
 import java.util.*;
-// reversing an array
 public class InputArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
