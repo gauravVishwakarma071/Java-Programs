@@ -1,11 +1,14 @@
+/*
+ * Finding nth fibonacci number.
+ */
 import java.util.*;
 public class FibonacciNum {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter a number..?");
-        int n = sc.nextInt();
-        System.out.println("The "+n+"th fibinacci number is : "+fibo(n));
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter a number..?");
+            int n = sc.nextInt();
+            System.out.println("The "+n+"th fibinacci number is : "+fibo(n));
+        }
         
     }
         
