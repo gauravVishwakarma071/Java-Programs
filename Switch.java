@@ -1,7 +1,7 @@
+/*
+ * Finding greater number between three numbers by using switch.
+ */
 import java.util.*;
-
-//Finding greater number between three numbers.
-
 public class Switch {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -9,17 +9,12 @@ public class Switch {
         int btn = sc.nextInt();
 
         switch (btn) {
-            case 1:
-                System.out.println("Hello");
-                break;
-            case 2:
-                System.out.println("Namaste");
-                break;
-            case 3:
-                System.out.println("bonjur");
-                break;
-            default:
-                System.out.println("Invalid Button");;
+            case 1 -> System.out.println("Hello");
+            case 2 -> System.out.println("Namaste");
+            case 3 -> System.out.println("bonjur");
+            default -> {
+                System.out.println("Invalid Button");
+            }
         }
 
     }
