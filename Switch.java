@@ -1,5 +1,5 @@
 /*
- * Finding greater number between three numbers by using switch.
+ * Print hello.
  */
 import java.util.*;
 public class Switch {
