@@ -4,11 +4,11 @@
 import java.util.*;         
 public class EvenOdd {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-
-        System.out.println("Enter a number..?");
-        int a = in.nextInt();
-        evenOdd(a);
+        try (Scanner in = new Scanner(System.in)) {
+            System.out.println("Enter a number..?");
+            int a = in.nextInt();
+            evenOdd(a);
+        }
     }
     
     public static void evenOdd(int a){
