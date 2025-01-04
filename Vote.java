@@ -4,12 +4,11 @@
 import java.util.*;
 public class Vote {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter Your Age");
-        int age = sc.nextInt();
-        
-        eligible(age);
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter Your Age");
+            int age = sc.nextInt();
+            eligible(age);
+        }
     }
 
     public static void eligible(int age){
