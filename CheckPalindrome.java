@@ -1,3 +1,6 @@
+/*
+ * Write a function to find if a number is a palindrome or not. Take number as parameter.
+ */
 import java.util.*;
 public class CheckPalindrome {
     public static void main(String args[]){
