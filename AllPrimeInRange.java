@@ -10,7 +10,7 @@ public class AllPrimeInRange {
 
             for (int i = a; i < b; i++) {
                if(allPrime(i)==true){
-                System.out.println(i);
+                System.out.print(i+" ");
                }
             }
         }       
@@ -19,6 +19,9 @@ public class AllPrimeInRange {
     public static boolean  allPrime(int i){
 
         for (int j = 2; j <= (i/2)+1; j++) {
+            if(i<=1){
+                return false;
+            }
             if(i%j==0){
                 return false;
             }
