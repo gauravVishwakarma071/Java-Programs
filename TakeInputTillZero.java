@@ -1,6 +1,6 @@
 //Input a number and print all the factors of that number (use loops).
 import java.util.*;
-public class TakeInputTillZero {
+public class TakeInputTillZero{
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             int sum = 0;
