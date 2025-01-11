@@ -1,4 +1,4 @@
-//Input a number and print all the factors of that number (use loops).
+//Take integer inputs till the user enters 0 and print the sum of all numbers (HINT: while loop)
 import java.util.*;
 public class TakeInputTillZero{
     public static void main(String[] args) {
