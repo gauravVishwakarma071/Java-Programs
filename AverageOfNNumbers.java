@@ -16,7 +16,8 @@ public class AverageOfNNumbers {
             sum += i;
             count++;
         }
-        float avg = sum/count;
-        System.out.println("The avarage of "+n+" natural number are : "+ avg);
+        System.out.println("sum : "+sum);
+        System.out.println("count : "+count);
+        System.out.println("The avarage of "+n+" natural number are : "+ (float) sum/count);
     }
 }
