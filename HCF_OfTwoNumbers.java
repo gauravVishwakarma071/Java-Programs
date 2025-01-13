@@ -10,24 +10,24 @@ HCF: 6 (largest common factor)
 import java.util.*;
 public class HCF_OfTwoNumbers {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        
-        int max = 0;
-        System.out.print("Enter first number : ");
-        int num1 = sc.nextInt();
-        System.out.print("Enter second number : ");
-        int num2 = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            int max = 0;
+            System.out.print("Enter first number : ");
+            int num1 = sc.nextInt();
+            System.out.print("Enter second number : ");
+            int num2 = sc.nextInt();
 
-        int con = (num1 > num2) ? num1 : num2;
+            int min = (num1 < num2) ? num1 : num2;
 
-        for (int i = 1; i <= con; i++) {
+            for (int i = 1; i <= min; i++) {
 
-            if(num1%i==0 && num2%i==0){
-                max = i;
+                if(num1%i==0 && num2%i==0){
+                    max = i;
+                }
+
             }
-
+            System.out.println("HCF : "+max);
         }
-        System.out.print("HCF : "+max);
 
     }
 }
