@@ -6,19 +6,31 @@ public class CGPA {
     static Scanner sc = new Scanner(System.in);
         public static void main(String[] args) {
             
-            System.out.print("Enter masks of Subject 1 : ");
-            float s1 = sc.nextFloat();
-            System.out.print("Enter masks of Subject 2 : ");
-            float s2 = sc.nextFloat();
-            System.out.print("Enter masks of Subject 3 : ");
-            float s3 = sc.nextFloat();
-            System.out.print("Enter masks of Subject 4 : ");
-            float s4 = sc.nextFloat();
-
-            float numOfSub = sc.nextInt();
+            // Taking Input ( number of subjects) 
+            System.out.print("Enter number of subjects : ");
+            int sub = sc.nextInt();
             
-            float CGPA = (float) ((s1+s2+s3+s4) / (numOfSub * 9.5));
+            //defining an Arrays to store 
+            float marks[] = new float[sub];
+            
+            //A loop for taking inputs of marks and adding them together
+            float total = 0;
+            for(int i = 0; i < sub ; i++){
+                
+                System.out.print("Enter mark of subjects "+i+" : ");
+                marks[i] = sc.nextInt();
 
-            System.out.println(CGPA);
+                if(marks[i]<0 || marks[i]>100) {
+                    System.out.println("invailid marks");
+                    i--;
+                }else{
+                    total += marks[i]; 
+                }
+            }
+
+            //Calculating CGPA 
+            float CGPA = (float) ((total) / (sub * 9.5f));
+
+            System.out.println("The CGPA : "+CGPA);
     }
 }
