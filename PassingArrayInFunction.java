@@ -8,8 +8,8 @@ public class PassingArrayInFunction {
         change(arr);
         System.out.println(Arrays.toString(arr));
     }
-
+    
     static void change(int[] arr){
-        arr[1] = 7;
+        arr[0] = 7;
     }
 }
