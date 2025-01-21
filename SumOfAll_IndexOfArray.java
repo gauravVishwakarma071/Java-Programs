@@ -1,20 +1,53 @@
 import java.util.Arrays;
-
+import java.util.*;
 public class SumOfAll_IndexOfArray {
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 4};
-        System.out.println("Input: " + Arrays.toString(nums));
-        System.out.println("Output: " + Arrays.toString(runningSum(nums)));
+        try (Scanner sc = new Scanner(System.in)) {
+            //Taking size of array.
+            System.out.print("Enter size of array : ");
+            int size = sc.nextInt();
+            
+            //Array
+            int arr[] = new int[size];
+            
+            //Taking inputs in array.
+            for (int i = 0; i < arr.length; i++) {
+                System.out.print("Enter value : ");
+                arr[i] = sc.nextInt();
+            }
+
+            System.out.println("This is your Array -> " + Arrays.toString(arr));
+
+            runningSum(arr, size);
+        }
     }
 
-    public static int[] runningSum(int[] nums) {
-        int[] result = new int[nums.length];
-        result[0] = nums[0]; // Initialize the first element
-        
-        for (int i = 1; i < nums.length; i++) {
-            result[i] = result[i - 1] + nums[i]; // Add the previous running sum to the current element
+    public static void runningSum(int arr[],int size){
+
+        int sum = 0; 
+
+        //Operations Performed
+        for (int i = 0; i < arr.length; i++) {
+            sum= sum + arr[i];
+            arr[i] = sum;
         }
-        
-        return result;
+
+        //Printing result
+        System.out.println("This is your result -> " + Arrays.toString(arr));
     }
 }
+/*
+
+arr[i] += arr[i-1];
+
+=========================
+
+int sum = 0; 
+
+        //Operations Performed
+        for (int i = 0; i < arr.length; i++) {
+            sum= sum + arr[i];
+            arr[i] = sum;
+        }
+
+*/ 
