@@ -18,11 +18,11 @@ public class SumOfAll_IndexOfArray {
 
             System.out.println("This is your Array -> " + Arrays.toString(arr));
 
-            runningSum(arr, size);
+            runningSum(arr);
         }
     }
 
-    public static void runningSum(int arr[],int size){
+    public static void runningSum(int arr[]){
 
         int sum = 0; 
 
