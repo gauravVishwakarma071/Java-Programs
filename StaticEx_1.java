@@ -21,7 +21,7 @@ class Student{
     public static void totalStudent(){
         System.out.println(count);
     }
-    public  void totalqStudent(){
+    void totalqStudent(){
         System.out.println(count);
     }
 
