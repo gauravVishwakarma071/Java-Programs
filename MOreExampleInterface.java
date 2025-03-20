@@ -18,9 +18,6 @@ class Child implements Mother, Father{
 
     String name;
 
-    Child(){
-        
-    }
     Child(String name){
         this.name = name;
     }
@@ -52,10 +49,8 @@ class Child implements Mother, Father{
 public class MOreExampleInterface {
     public static void main(String[] args) {
         
-        Child rohan = new Child();
+        Child rohan = new Child("Rohan");
 
-        //System.out.println(rohan.name);
 
-        rohan.canCook();
     }
 }
