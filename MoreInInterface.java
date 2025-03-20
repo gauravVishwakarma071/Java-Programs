@@ -22,8 +22,8 @@ class Developer{
 public class MoreInInterface {
     public static void main(String[] args) {
 
-        Laptop laptop1 = new Laptop();
-        Desktop desktop1 = new Desktop();
+        Computer laptop1 = new Laptop();
+        Computer desktop1 = new Desktop();
 
         Developer gaurav = new Developer();
         gaurav.devApp(laptop1);
