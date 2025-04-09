@@ -1,21 +1,39 @@
-class Student{
-    int id;
 
-    Student (int id){
-        this.id = id;
+//Shallow Cloning --> copies all values of the field from the Object (shared reference) but not the actual object. 
+public class ObjectCloning {
+    public static void main(String[] args) throws CloneNotSupportedException {
+        Address addr = new Address("jaunpur");
+        Student s1 = new Student("gaurav", addr);
+
+        Student s2 = (Student) s1.clone(); // Cloning s2 from s1.
+
+        s2.name = "akash";
+        s2.address.city = "varansi";
+        System.out.println(s1.name + " " + s1.address.city);
+        System.out.println(s2.name + " " + s2.address.city);
+
     }
-    
 }
 
-public class ObjectCloning {
-    public static void main(String[] args) {
-        Student s1 = new Student(110);
+class Address {
+    String city;
 
-        s1.id = 111;
+    Address(String city) {
+        this.city = city;
+    }
 
+}
 
-        Student s2 = s1;
-        System.out.println(s1.id);
-        System.out.println(s2.id);
+class Student implements Cloneable {
+    String name;
+    Address address;
+
+    Student(String name, Address address) {
+        this.name = name;
+        this.address = address;
+    }
+
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone(); // shallow Cloning.
     }
 }

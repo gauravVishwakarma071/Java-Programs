@@ -1,30 +1,30 @@
-interface GrandFather{
+interface GrandFather {
     void canSwim();
 }
 
-interface GrandMother{
+interface GrandMother {
     void canCook();
 }
 
-interface Mother{
+interface Mother {
     void canSing();
 }
 
-interface Father extends GrandFather,GrandMother{
+interface Father extends GrandFather, GrandMother {
     void canDrive();
 }
 
-class Child implements Mother, Father{
+class Child implements Mother, Father {
 
     String name;
 
-    Child(String name){
+    Child(String name) {
         this.name = name;
     }
 
     @Override
     public void canDrive() {
-       System.out.println("child can drive");
+        System.out.println("child can drive");
     }
 
     @Override
@@ -48,9 +48,10 @@ class Child implements Mother, Father{
 
 public class MOreExampleInterface {
     public static void main(String[] args) {
-        
+
         Child rohan = new Child("Rohan");
 
+        rohan.canDrive();
 
     }
 }
