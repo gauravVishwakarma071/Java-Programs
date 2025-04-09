@@ -39,7 +39,7 @@ class Student implements Cloneable {
 
     public Object clone() throws CloneNotSupportedException {
         Student cloned = (Student) super.clone();
-        cloned.address = (Address) address.clone();
-        return cloned; // shallow Cloning.
+        cloned.address = (Address) address.clone();// Deep Cloning.
+        return cloned;
     }
 }
