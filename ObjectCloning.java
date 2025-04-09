@@ -1,5 +1,5 @@
 
-//Shallow Cloning --> copies all values of the field from the Object (shared reference) but not the actual object. 
+//Shallow Cloning --> copies all values of the field from the Object (shared reference) but not the actual object, it copies reference of object. 
 public class ObjectCloning {
     public static void main(String[] args) throws CloneNotSupportedException {
         Address addr = new Address("jaunpur");
