@@ -1,4 +1,9 @@
 class MyFThread extends Thread {
+
+    MyFThread(String name) {
+        super(name);
+    }
+
     @Override
     public void run() {
         System.out.println("I am extented Thread");
@@ -12,6 +17,10 @@ class MyFThread extends Thread {
 }
 
 class MySThread implements Runnable {
+    MySThread(String name) {
+        super();
+
+    }
 
     @Override
     public void run() {
@@ -22,12 +31,12 @@ class MySThread implements Runnable {
 
 public class MyThread {
     public static void main(String[] args) throws InterruptedException {
-        MyFThread f1 = new MyFThread();
-        System.out.println(Thread.currentThread().getState());
+        MyFThread f1 = new MyFThread("First");
+        System.out.println(Thread.currentThread().getName());
         f1.start();
         System.out.println(f1.getName());
 
-        MySThread s1 = new MySThread();
+        MySThread s1 = new MySThread("Second");
         Thread t1 = new Thread(s1);
         t1.start();
         t1.join();
