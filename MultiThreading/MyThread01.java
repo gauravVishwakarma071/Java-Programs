@@ -1,3 +1,5 @@
+package MultiThreading;
+
 public class MyThread01 extends Thread {
 
     MyThread01(String name) {

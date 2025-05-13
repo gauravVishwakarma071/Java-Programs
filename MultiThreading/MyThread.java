@@ -1,3 +1,5 @@
+package MultiThreading;
+
 class MyFThread extends Thread {
 
     MyFThread(String name) {
