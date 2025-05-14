@@ -20,7 +20,7 @@ public class MyThread02 {
 class Counter {
     int count;
 
-    void increment() {
+    synchronized void increment() {
         count++;
     }
 
