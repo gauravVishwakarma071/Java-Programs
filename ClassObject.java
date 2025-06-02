@@ -4,8 +4,8 @@ public class ClassObject {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        //Object of class Rectangle.
-        Rectangle r1 = new Rectangle();
+        //Object of class com.inheritence.Rectangle.
+        com.inheritence.Rectangle r1 = new com.inheritence.Rectangle();
 
         System.out.print("Enter breathe : ");
         r1.breathe = sc.nextInt();

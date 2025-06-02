@@ -1,3 +1,5 @@
+package com.inheritence;
+
 //Ineritance_2
 class Shape{
     int l;
@@ -7,20 +9,16 @@ class Shape{
 }
 
 //Single level
-class Triangle extends Shape{
-    public void area(int l,int h){
-            System.out.println(l*h*0.5);
-    }
-}
+
 
 //Multi-leve
-class Rectangle extends Shape{
+class Rectangle extends com.inheritence.Shape {
     public void area(int l,int h){
             System.out.println(l*h*0.5);
     }
 }
 
-class Square extends Shape{
+class Square extends com.inheritence.Shape {
     public void area(int a){
             System.out.println(4*a);
     }
@@ -28,7 +26,7 @@ class Square extends Shape{
     
     public class Inheritance_2 {
         public static void main(String[] args) {
-            // Triangle t1 = new Triangle();
+            // com.inheritence.com.inheritence.Triangle t1 = new com.inheritence.com.inheritence.Triangle();
             // t1.area(4, 6);
 
             Square s1 = new Square();

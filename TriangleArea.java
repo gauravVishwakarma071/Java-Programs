@@ -14,7 +14,7 @@ class Triangle{
 public class TriangleArea{
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
-            Triangle t1 = new Triangle();
+            com.inheritence.Triangle t1 = new com.inheritence.Triangle();
 
             System.out.print("Enter breathe : ");
             t1.b  = sc.nextInt();
