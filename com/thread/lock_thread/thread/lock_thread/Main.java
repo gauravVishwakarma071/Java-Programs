@@ -1,7 +1,0 @@
-package com.thread.lock_thread.thread.lock_thread;
-
-public class Main {
-    public static void main(String[] args){
-        System.out.println("Hello");
-    }
-}
