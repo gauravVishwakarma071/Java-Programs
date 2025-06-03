@@ -9,7 +9,11 @@ class Shape{
 }
 
 //Single level
-
+class Triangle extends Shape{
+    public void area(int l,int h){
+            System.out.println(l*h*0.5);
+    }
+}
 
 //Multi-leve
 class Rectangle extends com.inheritence.Shape {
