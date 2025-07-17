@@ -14,7 +14,7 @@ public class VolatileExample {
             sharedObj.setFlagTure();
         });
 
-        Thread readerThread = new Thread(sharedObj::printIfflagTure);
+        Thread readerThread = new Thread(sharedObj::printIfFlagTure);
 
 
         writerThread.start();
