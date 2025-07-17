@@ -9,7 +9,7 @@ class Shape{
 }
 
 //Single level
-class Triangle extends Shape{
+class Triangle1 extends Shape{
     public void area(int l,int h){
             System.out.println(l*h*0.5);
     }
@@ -30,7 +30,7 @@ class Square extends com.inheritence.Shape {
     
     public class Inheritance_2 {
         public static void main(String[] args) {
-            // com.inheritence.com.inheritence.Triangle t1 = new com.inheritence.com.inheritence.Triangle();
+            // com.inheritence.com.inheritence.Triangle1 t1 = new com.inheritence.com.inheritence.Triangle1();
             // t1.area(4, 6);
 
             Square s1 = new Square();

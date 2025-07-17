@@ -1,10 +1,10 @@
 package com.inheritence;
 
 //com.inheritence.Inheritance_1 -> basic
-class Shape{
+class Shape1{
     String color;
 }
- class Triangle extends Shape{
+ class Triangle extends Shape1{
 
 }
 public class Inheritance_1{
