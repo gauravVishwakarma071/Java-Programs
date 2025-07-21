@@ -1,13 +1,13 @@
 package com.generic;
 
-public class Box {
-    private Object value;
+public class Box<T> {
+    private T value;
 
-    public Object getValue(){
+    public T getValue(){
         return value;
     }
 
-    public void setValue(Object v1){
+    public void setValue(T value){
         this.value = value;
     }
 }
